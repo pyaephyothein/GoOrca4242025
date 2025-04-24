@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Go Orca</title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/static/vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="/static/Content/Site.css?1aa83503-c718-442a-856b-3ca5b0707ae2" rel="stylesheet" />
+
+    <!-- vendors -->
+    <link href="/static/vendors/jquery-editable-select/dist/jquery-editable-select.min.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- iCheck -->
+    <link href="/static/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body {
+            padding-right: 0 !important
+        }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WRZQ89Q');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRZQ89Q"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-default topnav navbg" role="navigation">
+        <div class="container-fluid topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" style="max-width: 82%" >
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="/">
+                    <img src="/static/Images/logo-go-orca-2.png?v2" style="max-width: 95%" />
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbg-mobile" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <input type="hidden" name="langURL" id="langURL" value="/Home/ChangeLang" />
+<li class="dropdown link-head">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        <img src="/static/Images/flag_en.png" /> <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" style="background-color: #fff">
+                    <li><a href="javascript:setLang('th');">ไทย (Thai)</a></li>
+                    <li><a href="javascript:setLang('zh');">中文 (Chinese)</a></li>
+    </ul>
+</li>
+
+<li class="link-head">
+    <a href="/Home/ContactUS">Contact</a>
+</li>
+
+                        <li class="link-head">
+            <a href="/Member?redir=http%3A%2F%2F192.168.1.203%2FHome%2FContactUS">Sign In</a>
+    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <div>
+
+        
+<div class="container-fluid">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3><i class="glyphicon glyphicon-home"></i> Headquarters</h3>
+        </div>
+        <div class="panel-body">
+            25/1 Moo 8. mittraphap road Don Sak Suratthani 84220
+            <br />
+            Tel : +66 (0) 7737 2800-2
+            <br />
+            Fax : +66 (0) 7737 2804
+        </div>
+    </div>
+    <br />
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3><i class="glyphicon glyphicon-home"></i> Bangkok office</h3>
+        </div>
+        <div class="panel-body">
+            281 Sutthipong Soi 1.Sutthisanvinidchi Road Dindang, Bangkok 10400
+            <br />
+            Tel : +66 (0) 2277 4488
+            <br />
+            Fax : +66 (0) 2277 8521
+        </div>
+    </div>
+    <br />
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <h3><i class="glyphicon glyphicon-earphone"></i> Call Center</h3>
+        </div>
+        <div class="panel-body">
+            Tel : +66 (0) 2277 4488
+            <br />
+
+            Email :
+
+            info@goorca.com
+            <br />
+
+            Website :
+
+            https://www.GoOrca.com
+        </div>
+    </div>
+</div>
+
+    </div>
+    <!-- Page Content -->
+    <!-- Footer -->
+    <!-- 32232 -->
+    <footer>
+        <div class="container-fluid text-center">
+            <h2>Our Partners</h2>
+            <br />
+            <div class="row row-mt">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <img src="/static/Images/Layout/logo_lionair.png" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <img src="/static/Images/Layout/logo_airasia.png" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <img src="/static/Images/Layout/logo_raja.png" />
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <img src="/static/Images/Suppliers/logo_lomprayah.png" />
+                </div>
+            </div>
+            <div class="row row-mt">
+
+                <div class="col-lg-3 col-md-5 col-xs-12">
+                    <img src="/static/Images/Suppliers/Tiger Line Ferry.png" />
+                </div>
+                <div class="col-lg-2 col-md-5 col-xs-12">
+                    <img src="/static/Images/Suppliers/Songserm Ferry.png" />
+                </div>
+                <div class="col-lg-2 col-md-5 col-xs-12">
+                    <img src="/static/Images/Suppliers/Boonsiri.png" />
+                </div>
+                <div class="col-lg-3 col-md-5 col-xs-12">
+                    <img src="/static/Images/Layout/logo_rp.png" />
+                </div>
+                <div class="col-lg-2 col-md-5 col-xs-12">
+                    <img src="/static/Images/Suppliers/Jolly Travel.png" />
+                </div>
+
+            </div>
+            <div class="row row-mt">
+                <div class="col-lg-3 col-md-5 col-xs-12">
+                    <img src="/static/Images/Suppliers/Pattaya Bus.png" />
+                </div>
+                <div class="col-lg-2 col-md-5 col-xs-12">
+                    <img src="/static/Images/Suppliers/Nattakan.png" />
+                </div>
+                <div class="col-lg-2 col-md-5 col-xs-12">
+                    <img src="/static/Images/Suppliers/Satun Pakbara.png" />
+                </div>
+                <div class="col-lg-3 col-md-5 col-xs-12">
+                    <img src="/static/Images/Suppliers/Travel Mart.png" />
+                </div>
+                <div class="col-lg-2 col-md-6 col-xs-12">
+                    <img src="/static/Images/Suppliers/Phantip Travel.png" />
+                </div>
+                
+                <br />
+            </div>
+            <br />
+            <div class="row row-mt text-left">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div>INFORMATION</div>
+                    <div>About Us</div>
+                    <div>Directory of Transport</div>
+                    <div>Help</div>
+                    <div>Blog</div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div>TERMS and CONDITIONS</div>
+                    <div>Privacy Policy</div>
+                    <div>Terms of Use</div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div>WORK WITH US</div>
+                    <div>Agent</div>
+                    <div>Affliate</div>
+                    <div>Careers</div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div>FOLLOW US</div>
+                    <a href="https://www.facebook.com/GoOrca-2182235505393983/" target="_blank">
+                        <img src="/static/Images/Layout/icon_fb.png" />
+                    </a>
+                    <a href="https://lin.ee/35NvkIb" target="_blank">
+                        <img src="/static/Images/Layout/icon_ln.png" />
+                    </a>
+                </div>
+            </div>
+            <br />
+            <div class="row row-mt text-left">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <h4>GO ORCA</h4>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div>Company</div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div>CONTACT US</div>
+                    <div>www.goorca.com</div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div>CALL CENTER</div>
+                    <div>(+66) 22 768 211-2</div>
+                    <div>(+66) 922 473 423-5</div>
+                    <div>Monday to Sunday 07:00-21:00</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="/Home/ContactUS">About Us</a>
+                        </li>
+                    </ul -->
+                    <p class="copyright">Copyright &copy; Go Orca 2025. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="/static/Scripts/jquery-3.1.1.js"></script>
+    <script src="/static/vendors/sticky/jquery.sticky.js"></script>
+    <script src="/static/vendors/moment/min/moment.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/static/Scripts/bootstrap.js"></script>
+    <script src="/static/Scripts/bootstrap-tabcollapse.js"></script>
+    <script src="/static/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/static/vendors/jquery-editable-select/dist/jquery-editable-select.js"></script>
+    <script src="/static/vendors/jquery-number/jquery.number.min.js"></script>
+    <!-- iCheck -->
+    <script src="/static/vendors/iCheck/icheck.min.js"></script>
+    <script src="/static/vendors/validator/validator.js"></script>
+    <script src="/static/Scripts/jquery.scrollTo.js"></script>
+    <script src="/static/Scripts/Home/goorca.js?v=8be04ecd-55f2-45af-a645-f17a30ba380e"></script>
+    <script>
+
+
+        var init_validator = function () {
+
+            if (typeof (validator) === 'undefined') { return; }
+            console.log('init_validator');
+
+            // initialize the validator function
+            validator.message.date = 'not a real date';
+
+            // validate a field on "blur" event, a 'select' on 'change' event & a '.reuired' classed multifield on 'keyup':
+            $('form')
+                .on('blur', 'input[required], input.optional, select.required', validator.checkField)
+                .on('change', 'select.required', validator.checkField)
+                .on('keypress', 'input[required][pattern]', validator.keypress);
+
+            $('.multi.required').on('keyup blur', 'input', function () {
+                validator.checkField.apply($(this).siblings().last()[0]);
+            });
+
+            $('form').submit(function (e) {
+                e.preventDefault();
+                var submit = true;
+
+                // evaluate the form using generic validaing
+                if (!validator.checkAll($(this))) {
+                    submit = false;
+                }
+
+                if (submit)
+                    this.submit();
+
+                return false;
+            });
+
+        }();
+
+        var onScroll = function () {
+            //console.log($(window)[0].visualViewport);
+            $('.topnav, .fix-footer').css({
+                'left': $(window)[0].visualViewport.offsetLeft
+            });
+        };
+        $(window).bind('DOMMouseScroll MouseScrollEvent MozMousePixelScroll wheel scroll touchstart touchmove', onScroll);
+    </script>
+    
+</body>
+
+</html>
